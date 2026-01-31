@@ -1,65 +1,102 @@
-import Image from "next/image";
+import { Atom } from "lucide-react";
+
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiBootstrap,
+  SiTypescript,
+  SiFigma,
+} from "react-icons/si";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="w-full min-h-screen flex bg-white">
+      {/* LEFT CONTENT */}
+      <div className="w-1/2 px-20 py-16 flex flex-col justify-center">
+        <div className="border-l-4 border-purple-600 pl-4 mb-4">
+          <p className="text-3xl font-extrabold text-purple-500 leading-tight">
+            Frontend Website Developer
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <h1 className="text-6xl font-extrabold text-blue-600 mb-6">
+          Software Developer
+        </h1>
+
+        {/* TECH STACK ICONS */}
+        {/* TECH STACK ICONS */}
+        <div className="flex items-center gap-6 mb-8 flex-wrap">
+          {/* React */}
+          <Atom className="h-10 w-10 text-[#61DAFB]" />
+
+          {/* Next.js */}
+          <SiNextdotjs className="h-10 w-10 text-black" />
+
+          {/* Tailwind CSS */}
+          <SiTailwindcss className="h-10 w-10 text-[#38BDF8]" />
+
+          {/* JavaScript */}
+          <SiJavascript className="h-10 w-10 text-[#F7DF1E]" />
+
+          <SiHtml5 className="h-10 w-10 text-[#E34F26]" />
+          {/* FORCE LINE BREAK */}
+          <div className="w-full" />
+
+          {/* HTML5 */}
+
+          {/* CSS3 */}
+          <SiCss3 className="h-10 w-10 text-[#1572B6]" />
+
+          {/* Bootstrap */}
+          <SiBootstrap className="h-10 w-10 text-[#7952B3]" />
+
+          {/* TypeScript */}
+          <SiTypescript className="h-10 w-10 text-[#3178C6]" />
+
+          {/* Figma */}
+          <SiFigma className="h-10 w-10 text-[#F24E1E]" />
         </div>
-      </main>
+
+
+        {/* BUTTON */}
+        <button className="bg-[#7A5AF8] text-white px-10 py-4 rounded-full text-lg font-semibold w-fit shadow-lg mb-6">
+          ORDER NOW
+        </button>
+
+        <h2 className="text-3xl font-bold text-black">
+          Build Your Website
+        </h2>
+      </div>
+
+      {/* RIGHT CONTENT */}
+      <div className="w-1/2 relative bg-[#0F6A5F] flex items-center justify-center">
+        {/* PROFILE IMAGE */}
+        <div className="absolute top-20 right-24 w-72 h-72 rounded-full border-[10px] border-white overflow-hidden shadow-xl">
+          <img
+            src="/images/image1.png"
+            alt="Profile"
+            className="w-full h-full object-cover"
+          />
+        </div>
+          <div className="absolute left-80 right-0 bottom-70">
+            <p className="text-white text-lg">I am Md. <span className="text-yellow-400"> Ibrahim</span> Hossain Junior Software Engineer at <span className="text-yellow-400">Somikoron IT</span> and a <span className="text-green-400">CSE Graduate</span>, passionate about building modern and efficient web applications.</p>
+          </div>
+
+        {/* MOBILE MOCKUP */}
+        {/* MOBILE MOCKUP – CENTERED BETWEEN BOTH SIDES */}
+        <div className="absolute  bottom-0 -translate-x-3/4">
+          <img
+            src="/images/react.jpg"
+            alt="Mobile App"
+            className="h-96"
+          />
+        </div>
+
+
+      </div>
     </div>
   );
 }
