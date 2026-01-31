@@ -81,7 +81,7 @@ export default function Home() {
             className="w-full h-full object-cover"
           />
         </div>
-          <div className="absolute left-80 right-0 bottom-70">
+          <div className="absolute left-80 right-0 bottom-60">
             <p className="text-white text-lg">I am Md. <span className="text-yellow-400"> Ibrahim</span> Hossain Junior Software Engineer at <span className="text-yellow-400">Somikoron IT</span> and a <span className="text-green-400">CSE Graduate</span>, passionate about building modern and efficient web applications.</p>
           </div>
 
